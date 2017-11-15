@@ -215,7 +215,7 @@ ul.navbar-nav li a:focus { background: none; color: #01FEC3; outline: 0; }
 }
 
 
-/***** What we do (block 3) *****/
+/*****(block 3) *****/
 
 .block-3-box {
 	margin-top: 30px;
@@ -283,7 +283,7 @@ ul.navbar-nav li a:focus { background: none; color: #01FEC3; outline: 0; }
 .block-2-box {
 	padding-top: 30px;
 	padding-bottom: 20px;
-	text-align: left;
+	text-align: center;
 }
 
 .block-2-box.block-2-media { padding-bottom: 25px; }
@@ -291,11 +291,15 @@ ul.navbar-nav li a:focus { background: none; color: #01FEC3; outline: 0; }
 .block-2-box h3 {
 	padding: 10px 0;
 }
-.block-2-box h3:first-child { margin-top: 0; }
+.block-2-box h3:first-child { 
+    text-align: center;
+    margin-top: 0;
+}
 
 .block-2-box p {
 	font-size: 18px;
     line-height: 32px;
+    text-align: left;
 }
 
 .block-2-box ul {
@@ -307,6 +311,9 @@ ul.navbar-nav li a:focus { background: none; color: #01FEC3; outline: 0; }
 
 .block-2-box ul li {
 	padding: 5px 0;
+}
+.block-2-box{
+    text-align: left;
 }
 
 .block-2-box ul span.list-icon {
