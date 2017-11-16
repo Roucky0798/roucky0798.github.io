@@ -39,6 +39,7 @@
 					<ul class="nav navbar-nav navbar-right">
                         <li><a  href="index.html">Accueil</a></li>
 						<li><a  href="pag1.html">Mes Cours</a></li>
+                        <li><a  href="pag3.html">Module info</a></li>
                         <li><a  href="pag2.html">Mes réalisation</a></li>
 						<li><a  href="http://sio.lgmarras.org">Site du lycée</a></li>
 						<li><a  href="http://campus.lgmarras.org">Campus</a></li>
@@ -104,7 +105,7 @@
                         <div class="divider-1 wow fadeInUp"><span></span></div>
 	            		<p>
 	            			Pour pouvoir inserer un fichier PDF il existe une balise &lt;IFRAME&gt; &nbsp; &lt;/IFRAME&gt;<br />
-                            On définit un balise IFRAME en assignant un attribut source (<strong><i>src</i></strong>) et aprés on definit ses dimensions a l'aide des attributs <strong><i>width</i></strong>&nbsp;<strong><i>height</i></strong>.
+                            On définit un balise IFRAME en assignant un attribut source (<strong><i>src</i></strong>) et aprés on definit ses dimensions a l'aide des attributs <strong><i>width</i></strong>&nbsp;et&nbsp;<strong><i>height</i></strong>.
 	            		</p>
                         <IFRAME src="assets/pdf/Exalm.pdf" width=600 height=900 scrolling=auto frameborder=1 ></IFRAME>
                         <p><br>
@@ -132,7 +133,79 @@
                                    LEM               ANDS
             
                             </pre>
-                        
+                        <h2><u>Balise &lt;T***&gt;</u></h2>
+                        <div class="divider-1 wow fadeInUp"><span></span></div>
+                        <h3>&lt;table&gt;&lt;/table&gt;</h3>
+                        <p> 
+                            La balise &lt;table&gt; &nbsp; &lt;/table&gt; permet de créer un tableau.
+                        </p>
+
+                        <h3>&lt;theat&gt;&lt;/theat&gt;</h3>
+                        <p> 
+                            La balise &lt;thead&gt; &nbsp; &lt;/thead&gt; permet de définir les donnés de l'entête d'un tableau.
+                        </p>
+                        <h3>&lt;tbody&gt;&lt;/tbody&gt;</h3>
+                        <p> 
+                           La balise &lt;tbody&gt; &nbsp; &lt;/tbody&gt; est utilisé de la même façon que la balise &lt;body&gt; &nbsp; &lt;/body&gt; a l'interieur on insere le corp du tableau.
+                        </p>
+                        <h3>&lt;tr&gt;&lt;/tr&gt;</h3>
+                        <p> 
+                            La balise &lt;tr&gt; &nbsp; &lt;/tr&gt; permet de definir une ligne. Dans cette balise on peut y trouvé les balise &lt;th&gt; &nbsp; &lt;/th&gt; et &lt;td&gt; &nbsp; &lt;/td&gt; que m'on verra par la suite.
+                        </p>
+                        <h3>&lt;th&gt;&lt;/th&gt;</h3>
+                        <p> 
+                            La balise &lt;th&gt; &nbsp; &lt;/th&gt; est un initulé de colonne cette balise peut être placée n'importe ou dans un tableau. elle est situé dans une balise &lt;tr&gt; &nbsp; &lt;/tr&gt;.
+                        </p>
+                        <h3>&lt;td&gt;&lt;/td&gt;</h3>
+                        <p> 
+                            La balise &lt;td&gt; &nbsp; &lt;/td&gt; définit une cellule du tableau. elle est situé dans une balise &lt;tr&gt; &nbsp; &lt;/tr&gt;.
+                        </p>
+                        <h3>&lt;tfoot&gt;&lt;/tfoot&gt;</h3>
+                        <p> 
+                            La balise &lt;tfoot&gt; &nbsp; &lt;/tfoot&gt; est utilisé de la même façon que la balise &lt;footer&gt; &nbsp; &lt;/footer&gt; il s'agit du pied du tableau.
+                        </p>
+                        <h3>Ajout de ligne</h3>
+                        <p> 
+                           Une fois le tableau cré il ne possedera pas de ligne il faudra donc les definir dans la balise &lt;table&gt; &nbsp; &lt;/table&gt; en y ajoutant l'attribut <strong><i>border</i></strong> et lui attribué une valeur.
+                        </p>
+                        <h3>Code</h3>
+                        <p> 
+                           Aprés avoir fait ces etapes vous devriez optenir ceci.
+                        </p><br />
+                        <img src="assets/img/photo/tableau.PNG"><br /><br /><br />
+                        <p>
+                            Le resultat sur la page pour le code précedent donne ceci.
+                        </p>
+                        <!-- Création du tableau -->
+                         <table border="1">
+                             <!-- Création de l'entête -->
+                             <thead>
+                                 <tr>
+                                    <th> &nbsp;Css &nbsp;</th>
+                                    <th> &nbsp;html &nbsp;</th>
+                                    <th> &nbsp;PHP &nbsp;</th>
+                                    <th> &nbsp;JS &nbsp;</th>
+                                </tr>
+                             </thead>
+                             <!-- Création du Corp -->
+                             <tbody>
+                                <tr>
+                                    <td> &nbsp;Apris &nbsp;</td>
+                                    <td> &nbsp;Apris &nbsp;</td>
+                                    <td> &nbsp;Pas Apris &nbsp;</td>
+                                    <td> &nbsp;En cours d'aprentisage &nbsp;</td>
+                                 </tr>
+                            </tbody>
+                            <!-- Création du pied de page -->
+                            <tfoot>
+                                <tr>
+                                    <td> &nbsp;OK &nbsp;</td>
+                                    <td> &nbsp;OK &nbsp;</td>
+                                    <td> &nbsp;OK &nbsp;</td>
+                                    <td> &nbsp;OK &nbsp;</td>
+                                </tr>
+                            </tfoot>
+                        </table>
 	            	</div>
 	            </div>
 	        </div>
