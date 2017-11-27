@@ -103,15 +103,15 @@
       </div>
         
       <div class="col-md-3 col-sm-6 service"> 
-        <h4>A VENIR</h4><br />
+        <h4>LES ÉLÉMENTS &lt;INPUT&gt; &lt;/INPUT&gt;</h4>
         <p class="titi">  
-         <a class="big-link-3 btn " href="#">ICI</a> <br /><br /></p>
+         <a class="big-link-3 btn " href="#input">ICI</a> <br /><br /></p>
       </div>
         
       <div class="col-md-3 col-sm-6 service"> 
-        <h4>A VENIR</h4><br />
+        <h4>MENU DÉROULANT</h4><br />
         <p class="titi">  
-         <a class="big-link-3 btn " href="#">ICI</a> <br /><br /></p>
+         <a class="big-link-3 btn " href="#menu">ICI</a> <br /><br /></p>
       </div>
         
       <div class="col-md-3 col-sm-6 service"> 
@@ -123,6 +123,7 @@
     </div>
   </div>
 </div>
+        </div> 
              <!-- support Html et css -->
         <div class="about-container section-container">
 	        <div class="container">
@@ -180,12 +181,11 @@
                                          BOU CHE
                                          Ô  PARIS
                                        TIRE ET TIRERA
-                                      TOU        JOURS                                                                                                                                                  
+                                      TOU        JOURS                                                                                                                                                  <div id="balise" class="scroll">
                                      AUX            AL
                                    LEM               ANDS
             
                             </pre>
-                             <div id="balise" class="scroll"> 
                         <h2><u>Balise &lt;T***&gt;</u></h2>
                         <div class="divider-1 wow fadeInUp"><span></span></div>
                         <h3>&lt;table&gt;&lt;/table&gt;</h3>
@@ -211,7 +211,7 @@
                         </p>
                         <h3>&lt;td&gt;&lt;/td&gt;</h3>
                         <p> 
-                            La balise &lt;td&gt; &nbsp; &lt;/td&gt; définit une cellule du tableau. elle est située dans une balise &lt;tr&gt; &nbsp; &lt;/tr&gt;.
+                            La balise &lt;td&gt; &nbsp; &lt;/td&gt; définit une cellule du tableau. elle est situer dans une balise &lt;tr&gt; &nbsp; &lt;/tr&gt;.
                         </p>
                         <h3>&lt;tfoot&gt;&lt;/tfoot&gt;</h3>
                         <p> 
@@ -250,6 +250,7 @@
                                  </tr>
                             </tbody>
                             <!-- Création du pied de page -->
+                             <div id="input"></div>
                             <tfoot>
                                 <tr>
                                     <td> &nbsp;OK &nbsp;</td>
@@ -258,13 +259,204 @@
                                     <td> &nbsp;OK &nbsp;</td>
                                 </tr>
                             </tfoot>
-                        </table>
-	            	</div>
+                        </table><br /><br />
+                        <h2><u>Les éléments &lt;input&gt; &lt;/input&gt;</u></h2>
+                        <div class="divider-1 wow fadeInUp"><span></span></div>
+                        <h3><u>Attributs de input text</u></h3>
+                        <h4>Name et id</h4>
+	            		<p>
+	            			Nom de l'objet et l'identificateur.
+                            Le nom a deux utilisations. Il sert à accéder à l'élément, mais devient aussi un nom de variable dans les données de formulaire quand elle sont passées par POST ou GET.
+                            Ainsi si le nom est "montext" et le contenu de value "contenu", les données de formulaire contiendront &montext=contenu.
+	            		</p><br />
+                        <h4>Value</h4>
+                        <p>
+                            Contiendra le texte entré par l'utilisateur. On peut l'assigner avec un texte par défaut.
+                        </p>
+                        <img src="assets/img/photo/value.png"><br /><br />
+                        <img src="assets/img/photo/value2.png"><br /><br />
+                        <p>
+                            Ce contenu peut être assigné dynamiquement, pour ajouter un contenu aux données de formulaire, ou lu dynamiquement par un script. 
+                            Exemple de lecture:
+                        </p>
+                         <img src="assets/img/photo/value3.png"><br /><br />
+                         <h4>Size</h4>
+                         <p>
+                            Largeur initiale du champ d'entrée de texte. Dans le cas présent, la taille correspond à un nombre de caractères (pour les autres objets c'est un nombre de pixels). 
+                            La largeur en pixels correspond à une largeur moyenne pour les polices de caractères.
+                         </p><br />
+                         <h4>Maxlength</h4>
+                         <p>
+                            Nombre maximal de caractères que l'utilisateur peut entrer, ou que l'on peut assigner à value.
+                            Il peut être supérieur à size, dans ce cas le contenu défile dans le champ de texte.
+                         </p><br />
+                        <h4>Disabled</h4>
+                         <p>
+                            L'objet est désactivé au chargement de la page, et affiché en gris.
+                         </p>
+                         <img src="assets/img/photo/disabled.png"><br /><br />
+                         <p>
+                            Pour l'activer, un script assigne l'attribut avec la valeur false.
+                         </p>
+                         <img src="assets/img/photo/disabled2.png"><br /><br />
+                         <h4>Readonly</h4>
+                         <p>
+                            Cet attribut interdit de modifier le contenu de l'attribut value. A la différence de disabled, l'objet est affiché normalement bien que l'utilisateur ne puisse rien entrer.On modifie cet état comme pour l'attribut disabled:
+                         </p>
+                         <img src="assets/img/photo/readonly.png"><br /><br />
+                         <p>
+                            Parmi les attributs hérités: title, style, tabindex, class.
+                         </p><br />
+                         <h3><u>Des balises spécialisées selon les types de données</u></h3>
+                         <h4>Password</h4>
+                         <p>Il est équivalent à l'objet text avec la différence que le texte assigné à l'attribut value est masqué, et remplacé par des astérisques.</p>
+                         <img src="assets/img/photo/password.png"><br /><br />
+                         <p>
+                            Son utilisation et son fonctionnement sont les mêmes.
+                         </p>
+                         <h4>Textarea</h4>
+                         <p>
+                            Il fonctionne comme text, mais affiche plusieurs lignes et la valeur est contenue entre la balise ouvrante et fermante.
+                            Attributs:
+                         </p>
+                         <ol>
+                            <li>
+                                <h4>Row</h4>
+                                <p>Nombre de lignes visibles. Remplace l'attribut size.</p>
+                            </li>
+                            <li>
+                                <h4>Cols</h4>
+                                <p>Nombre de caractères par ligne. La largeur en pixels correspond à la largeur moyenne.</p>
+                            </li>
+                         </ol>
+                         <p>
+                            Exemple:
+                         </p>
+                         <img src="assets/img/photo/password2.png"><br /><br />
+                         <p>
+                            On peut utiliser textarea tout comme text pour ajouter des données statiques à un formulaire, avec l'attribut readonly.
+                         </p>
+                         <h3><u>les evènements</u></h3>
+                         <h4>Onfocus</h4>
+                         <p>
+                            Réagit quand l'objet obtient le focus, donc quand l'utilisateur clique sur le champ de texte.
+                         </p>
+                         <h4>Onblur</h4>
+                         <p>
+                            Le focus est perdu (l'utilisateur clique ailleurs).
+                         </p>
+                         <h4>Onchange</h4>
+                         <p>
+                            Quand un caractère est entré ou modifié mais est déclenché quand le champ de texte perd le focus.
+                         </p>
+                         <h4>Onselect</h4>
+                         <p>
+                            Une partie du texte est sélectionnée.<br>
+                            On commande aussi la sélection du texte par la méthode select(). 
+                         </p>
+                         <img src="assets/img/photo/click.png"><br /><br />
+                         <h4>Onclick</h4>
+                         <p>
+                            L'utilisateur clique dans le champs de texte.
+                         </p>
+                         <h4>Acceskey</h4>
+                         <p>
+                            Permet d'assigner une touche ou une combinaison. Quand l'utilisateur tape cette touche, le champs de texte obtient le focus, il peut entrer du texte.
+                            Exemple:
+                         </p>
+                         <img src="assets/img/photo/key.png"><br /><br />
+                         <p>
+                            A ces évènements s'ajoutent ceux de l'objet hérité: ondblclick, onmousedown, onmouseup, onemousemove, onmouseover, onmouseout, onkeypress, onkeydown.
+                         </p>
+                         <h3>Code</h3>
+                         <p>le résultat du codage pour les formulaires</p>
+                         <img src="assets/img/photo/formulaire.png"><br /><br />
+                         <h3>Résultat</h3>
+                        
+                        <br /> <div id="menu"></div>
+                        <div class="form">
+                        <form name="nomformulaire" method="post" action="">
+                            <input name="nomtexte" class="textfield" type="text" size="40" maxlength="60" 
+                                value="Taper un texte" 
+                                onChange="change(this)" 
+                                onFocus="getfocus(this)" 
+                                onBlur="losefocus(this)" >
+                        </form> 
+                        </div> <br /><br /><br /><br />
+                        
+                        <h2><u>Menu déroulant</u></h2>
+                        <div class="divider-1 wow fadeInUp"><span></span></div>
+                        <h3>Menu déroulant partie HTML</h3>
+                        <p>
+                            Pour créé un menu déroulant il faut commencer par créer une balise &lt;ul&gt; &lt;/ul&gt; afin de mettre un id pour le css.<br> Ensuite dans cette balise on va créer une balise  &lt;li&gt; &lt;/li&gt; qui servira d'onglet principal (il faut en faire autant que d'onglets principaux dont vous avez besoin).<br> Maintenant créer une nouvelle fois des balise &lt;ul&gt; &lt;/ul&gt; pour y placer les balises &lt;li&gt; &lt;/li&gt; ou vous y placerez vos lien de sous menu
+                        </p><br /><br />
+                        <h3>Code</h3>
+                        <p>
+                            Pour récapituler voici le code obtenu
+                        </p>
+                        <img src="assets/img/photo/menu.png"><br /><br />
+                        <h3>Menu déroulant partie CSS</h3>
+                        <h4>Gestion des balises &lt;ul&gt; &lt;/ul&gt; et &lt;li&gt; &lt;/li&gt;</h4>
+                        <img src="assets/img/photo/ulli.png"><br /><br />
+                        <h4>Gestion des background</h4>
+                        <img src="assets/img/photo/background.png"><br /><br />
+                        <h4>Gestion des balises &lt;a&gt; &lt;/a&gt;</h4>
+                        <img src="assets/img/photo/href.png"><br /><br />
+                        <h3>Le résultat</h3>
+                        <p>
+                            Aprés avoir fait toutes ces étapes vous obtiendrez ceci
+                        </p>
+                        <br /><br />
+                    <ul id="menu">
+                        <li><a href="#">Lien menu 1</a>
+                            <ul>
+                                <li><a href="#">lien sous menu 1</a></li>
+                                <li><a href="#">lien sous menu 1</a></li>
+                                <li><a href="#">lien sous menu 1</a></li>
+                                <li><a href="#">lien sous menu 1</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Lien menu 2</a>
+                            <ul>
+                                <li><a href="#">Lien sous menu 2</a></li>
+                                <li><a href="#">Lien sous menu 2</a></li>
+                                <li><a href="#">Lien sous menu 2</a></li>
+                                <li><a href="#">Lien sous menu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Lien menu 3</a>
+                            <ul>
+                                <li><a href="#">lien sous menu 3</a></li>
+                                <li><a href="#">lien sous menu 3</a></li>
+                                <li><a href="#">lien sous menu 3</a></li>
+                                <li><a href="#">lien sous menu 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Lien menu 4</a>
+                            <ul>
+                                <li><a href="#">Lien sous menu 4</a></li>
+                                <li><a href="#">Lien sous menu 4</a></li>
+                                <li><a href="#">Lien sous menu 4</a></li>
+                                <li><a href="#">Lien sous menu 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <br /><br /><br /><br /><br /><br />
+	            	  </div>
                     </div>
 	            </div>
 	        </div>
         </div>
         </div>
+
+                        
+    
+    
+    
+    
+    
+    
+    
                  <!-- Css -->
             <div class="block-2-container section-container about-block-2-container">
 	        <div class="container">
@@ -366,7 +558,7 @@
                         <p>
                             Voila vous avez toute les cartes en mains pour héberger votre site
                         </p>
-	            	</div>
+                    </div>
                   </div>
 	            </div>
               </div>
@@ -389,6 +581,7 @@
 	            </div>
 	        </div>
         </footer>
+       
         
 
         <!-- Javascript -->
