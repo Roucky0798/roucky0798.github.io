@@ -886,9 +886,6 @@ td{
     background:rgba(35, 14, 6, 0.8);
     margin-right: 450px;
 }
-value{
-    color:red;
-}
 
 
 
@@ -994,4 +991,21 @@ text-transform:inherit;
 }
 #menu li:hover a, #menu li li:hover a{
 color:#000;
+}
+
+
+table {
+    margin-left: 80px;
+    border: 1px solid;
+    color: black;
+    padding-right: 80px;
+    width: 600px;
+}
+
+td, th {
+    border: 1px solid;
+    padding-left: 10px;
+    padding-right:10px;
+    text-align: center;
+    width: 100px;
 }
