@@ -39,7 +39,7 @@
 					<ul class="nav navbar-nav navbar-right">
                         <li><a  href="index.html">Accueil</a></li>
 						<li><a  href="pag1.html">Mes Cours</a></li>
-                        <li><a  href="pag3.html">Module info</a></li>
+                        <li><a  href="pag3.html">SI5</a></li>
                         <li><a  href="pag2.html">Mes réalisation</a></li>
 						<li><a  href="http://sio.lgmarras.org">Site du lycée</a></li>
 						<li><a  href="http://campus.lgmarras.org">Campus</a></li>
@@ -372,16 +372,17 @@
                          <img src="assets/img/photo/formulaire.png"><br /><br />
                          <h3>Résultat</h3>
                         
-                        <br /> <div id="menu"></div>
-                        <div class="form">
-                        <form name="nomformulaire" method="post" action="">
-                            <input name="nomtexte" class="textfield" type="text" size="40" maxlength="60" 
-                                value="Taper un texte" 
-                                onChange="change(this)" 
-                                onFocus="getfocus(this)" 
-                                onBlur="losefocus(this)" >
+                        <br />
+                        
+                        
+                        <form method="get" action="resultat.html">
+                        <p> Texte :
+                            <input type="text" name="n"/>
+                        </p>
                         </form> 
-                        </div> <br /><br /><br /><br />
+                        
+                        
+                        <br /><br /><br /><br />
                         
                         <h2><u>Menu déroulant</u></h2>
                         <div class="divider-1 wow fadeInUp"><span></span></div>
@@ -490,8 +491,8 @@
                         </p>
                         <h4>1.Créer un compte GitHub</h4>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rendez-vous sur le site <a href="https://github.com">https://github.com</a></p>
-                        <h4>2.Créer le repository GitHub</h4>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Créer un nouveau repository pour votre site web : <a href="https://github.com">https://github.com</a> (exemple : SitePerso)</p>
+                        <h4>2.Créer le repository GitHub en terminant par .github.io exemple "Roucky0798.github.io"</h4>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Créer un nouveau repository pour votre site web : <a href="https://github.com">https://github.com</a> (exemple : SitePerso.github.io)</p>
                         <h4>3.Télécharger le logiciel Git Bash à l'adresse suivante : <a href="https://git-scm.com">https://git-scm.com</a> </h4>
                         <h4>4.Ouvrez le logiciel et éffectuez ces commandes dans la fenêtre de commande</h4>
                             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. cd documents</p>
@@ -576,7 +577,7 @@
                                  </th><th scope="col" colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Niveau de maitrise</th>
                                 </tr>
                               <tr>
-                                <th scope="col">Très bon</th><th scope="col">Bon</th><th scope="col">Moyen</th><th scope="col">Mauvais</th>
+                                <th scope="col">Très bon</th><th scope="col"><img src="assets/img/photo/validé.png" width=15px height=15px >Bon</th><th scope="col">Moyen</th><th scope="col">Mauvais</th>
                               </tr>
                              </thead>
                             </table><br />                           
@@ -588,7 +589,7 @@
                                  </th><th scope="col" colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Niveau de maitrise</th>
                                 </tr>
                               <tr>
-                                <th scope="col">Très bon</th><th scope="col">Bon</th><th scope="col">Moyen</th><th scope="col">Mauvais</th>
+                                <th scope="col">Très bon</th><th scope="col"><img src="assets/img/photo/validé.png" width=15px height=15px >Bon</th><th scope="col">Moyen</th><th scope="col">Mauvais</th>
                               </tr>
                              </thead>
                             </table><br />
@@ -600,20 +601,7 @@
                                  </th><th scope="col" colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Niveau de maitrise</th>
                                 </tr>
                               <tr>
-                                <th scope="col">Très bon</th><th scope="col">Bon</th><th scope="col">Moyen</th><th scope="col">Mauvais</th>
-                              </tr>
-                             </thead>
-                            </table><br />
-                    <!-- tableau compétences-->
-                         <table class="t11">
-                            <thead>
-                              <tr>
-                                 <th rowspan="2">COMMANDE AVANCÉES
-
-                                 </th><th scope="col" colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Niveau de maitrise</th>
-                                </tr>
-                              <tr>
-                                <th scope="col">Très bon</th><th scope="col">Bon</th><th scope="col">Moyen</th><th scope="col">Mauvais</th>
+                                <th scope="col">Très bon</th><th scope="col">Bon</th><th scope="col"><img src="assets/img/photo/validé.png" width=15px height=15px >Moyen</th><th scope="col">Mauvais</th>
                               </tr>
                              </thead>
                             </table><br />
@@ -625,7 +613,7 @@
                                  </th><th scope="col" colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Niveau de maitrise</th>
                                 </tr>
                               <tr>
-                                <th scope="col">Très bon</th><th scope="col">Bon</th><th scope="col">Moyen</th><th scope="col">Mauvais</th>
+                                <th scope="col"><img src="assets/img/photo/validé.png" width=15px height=15px >Très bon</th><th scope="col">Bon</th><th scope="col">Moyen</th><th scope="col">Mauvais</th>
                               </tr>
                              </thead>
                             </table><br />

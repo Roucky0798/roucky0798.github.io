@@ -67,7 +67,7 @@ body, html {
 }
 
 .pimg11{
-	background-image: url(../chap2/td1.jpg)
+	background-image: url(../chap2/td1.jpg);
 	min-height: 100%;
 }
 .pimg12{
@@ -89,33 +89,33 @@ body, html {
 	min-height: 100%;
 }
 .pimg16{
-	background-image: url(../chap1/4.jpg);
+	background-image: url(../chap1/d&g.png);
 	min-height: 100%;
 }
 
 .pimg17{
-	background-image: url(../chap1/4.jpg);
+	background-image: url(../chap1/dmg.png);
 	min-height: 100%;
 }
 
 .pimg18{
-	background-image: url(../chap1/4.jpg);
+	background-image: url(../chap1/mg.png);
 	min-height: 100%;
 }
 .pimg19{
-	background-image: url(../chap1/4.jpg);
+	background-image: url(../chap1/boss1.png);
 	min-height: 100%;
 }
 .pimg20{
-	background-image: url(../chap1/4.jpg);
+	background-image: url(../chap1/boss2.png);
 	min-height: 100%;
 }
 .pimg21{
-	background-image: url(../chap1/4.jpg);
+	background-image: url(../chap1/boss3.png);
 	min-height: 100%;
 }
 .pimg22{
-	background-image: url(../chap1/4.jpg);
+	background-image: url(../chap1/boss4.png);
 	min-height: 100%;
 }
 
